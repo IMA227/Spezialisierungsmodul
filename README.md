@@ -52,22 +52,48 @@ Contains the exploratory data analysis, visualizations, and descriptive analysis
 
 ## Order of Operation
 
-The project workflow starts with scraping the restaurant reviews and enriching them with regional information. After that, a labelled sample is created for model development and evaluation. The sentiment models are then tested, followed by the topic classification models and the reviewer-name-based gender-indicator model. Finally, the restaurant-level sentiment balance is calculated and the results are explored in the EDA notebook.
+The workflow is organized in several steps. It starts with data collection and regional enrichment, then continues with sampling, model development, inference, and finally the exploratory analysis.
+
+### 1. Data preparation (Local Enviornment)
 
 `Scrapper.py`  
-→ `PLZ API.py`  
-→ `Sampling_1000.py`  
-→ Sentiment scripts:  
-`Sentiment_lexicon_Based_3 Models.py` → `Cardiff_xlm_Roberta_Sentiment.py` → `GBERT_Sentiment_Analysis.py`  
-→ Topic scripts:  
-`Base Model Topics.py` → `GBERT_GridSearch_Topics.py` → `GBERT_learning_curve_Topics.py` → `GBERT_Topics_Inference.py`  
-→ Gender-indicator scripts:  
-`GBERT_Gender_Grid Search.py` → `GBERT_Gender_Inference.py`  
-→ `Net Sentiment Balance.py`  
-→ `EDAs.ipynb`
+↓  
+`PLZ API.py`  
+↓  
+`Sampling_1000.py`
+
+### 2. Sentiment analysis (Google Colab)
+
+`Sentiment_lexicon_Based_3 Models.py`  
+↓  
+`Cardiff_xlm_Roberta_Sentiment.py`  
+↓  
+`GBERT_Sentiment_Analysis.py`
+
+### 3. Topic classification (Google Colab)
+
+`Base Model Topics.py`  
+↓  
+`GBERT_GridSearch_Topics.py`  
+↓  
+`GBERT_learning_curve_Topics.py`  
+↓  
+`GBERT_Topics_Inference.py`
+
+### 4. Reviewer-name-based gender indicator (Google Colab)
+
+`GBERT_Gender_Grid Search.py`  
+↓  
+`GBERT_Gender_Inference.py`
+
+### 5. Final analysis (Local Enviornment)
+
+`Net Sentiment Balance.py`  
+↓  
+`EDAs.ipynb`
 
 ---
 
 ## Notes
 
-The scripts originally used local file paths. These paths were removed before publishing, so users need to adjust the input and output paths before running the scripts.
+The scripts originally used personalized file paths. These paths were removed before publishing, so users need to adjust the input and output paths before running the scripts.

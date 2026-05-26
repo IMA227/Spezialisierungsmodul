@@ -56,41 +56,23 @@ The workflow is organized in several steps. It starts with data collection and r
 
 ### 1. Data preparation (Local Environment)
 
-`Scrapper.py`  
-↓  
-`PLZ API.py`  
-↓  
-`Sampling_1000.py`
+`Scrapper.py` → `PLZ API.py` → `Sampling_1000.py`
 
 ### 2. Sentiment analysis (Google Colab)
 
-`Sentiment_lexicon_Based_3 Models.py`  
-↓  
-`Cardiff_xlm_Roberta_Sentiment.py`  
-↓  
-`GBERT_Sentiment_Analysis.py`
+`Sentiment_lexicon_Based_3 Models.py` → `Cardiff_xlm_Roberta_Sentiment.py` → `GBERT_Sentiment_Analysis.py`
 
 ### 3. Topic classification (Google Colab)
 
-`Base Model Topics.py`  
-↓  
-`GBERT_GridSearch_Topics.py`  
-↓  
-`GBERT_learning_curve_Topics.py`  
-↓  
-`GBERT_Topics_Inference.py`
+`Base Model Topics.py` → `GBERT_GridSearch_Topics.py` → `GBERT_learning_curve_Topics.py` → `GBERT_Topics_Inference.py`
 
 ### 4. Reviewer-name-based gender indicator (Google Colab)
 
-`GBERT_Gender_Grid Search.py`  
-↓  
-`GBERT_Gender_Inference.py`
+`GBERT_Gender_Grid Search.py` → `GBERT_Gender_Inference.py`
 
 ### 5. Final analysis (Local Environment)
 
-`Net Sentiment Balance.py`  
-↓  
-`EDAs.ipynb`
+`Net Sentiment Balance.py` → `EDAs.ipynb`
 
 ---
 

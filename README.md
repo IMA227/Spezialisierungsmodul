@@ -54,7 +54,7 @@ Contains the exploratory data analysis, visualizations, and descriptive analysis
 
 The workflow is organized in several steps. It starts with data collection and regional enrichment, then continues with sampling, model development, inference, and finally the exploratory analysis.
 
-### 1. Data preparation (Local Enviornment)
+### 1. Data preparation (Local Environment)
 
 `Scrapper.py`  
 ↓  
@@ -86,7 +86,7 @@ The workflow is organized in several steps. It starts with data collection and r
 ↓  
 `GBERT_Gender_Inference.py`
 
-### 5. Final analysis (Local Enviornment)
+### 5. Final analysis (Local Environment)
 
 `Net Sentiment Balance.py`  
 ↓  

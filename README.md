@@ -1,8 +1,6 @@
 # A Multi-Method Analysis of Restaurant Reviews in Germany: Sentiment, Topic Classification, and Spatio-Temporal Patterns
 
-This project analyzes German restaurant reviews collected from Speisekarte.de using web scraping, sentiment analysis, topic classification, and exploratory data analysis.  
-The workflow combines classical Python-based NLP methods with transformer-based models such as Cardiff XLM-RoBERTa and German BERT/GBERT.  
-Additional analysis includes reviewer-name-based gender indicators, regional enrichment using postal codes, temporal patterns, and restaurant-level sentiment aggregation.
+This project analyzes German restaurant reviews collected from Speisekarte.de using web scraping, sentiment analysis, topic classification, and exploratory data analysis. The workflow combines classical Python-based NLP methods with transformer-based models such as Cardiff XLM-RoBERTa and German BERT/GBERT. Additional analysis includes reviewer-name-based gender indicators, regional enrichment using postal codes, temporal patterns, and restaurant-level sentiment aggregation.
 
 ---
 

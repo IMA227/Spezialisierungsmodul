@@ -17,8 +17,8 @@ Retrieves German postal-code and federal-state information from OpenPLZ API and 
 ### `Sampling_1000.py`
 Creates a stratified sample of 1,000 reviews (based on Bundesland, sentiment, and review year) for manual annotation and model evaluation.
 
-### `Sentiment_lexicon_Based_3_Models.py`
-Applies 3 classical lexicon-based sentiment approaches (TextBlobDE, SentiWS, GermanPolarityClues) as baseline sentiment models.
+### `Sentiment_lexicon_Based_3 Models.py`
+Applies three classical lexicon-based sentiment approaches: TextBlobDE, SentiWS, and GermanPolarityClues.
 
 ### `Cardiff_xlm_Roberta_Sentiment.py`
 Runs sentiment classification using the pretrained Cardiff XLM-RoBERTa sentiment model.
@@ -54,41 +54,22 @@ Contains the exploratory data analysis, visualizations, and descriptive analysis
 
 ## Order of Operation
 
-1. **Data collection**  
-   Run `Scrapper.py` to collect restaurant and review data from Speisekarte.de.
+The project workflow starts with scraping the restaurant reviews and enriching them with regional information. After that, a labelled sample is created for model development and evaluation. The sentiment models are then tested, followed by the topic classification models and the reviewer-name-based gender-indicator model. Finally, the restaurant-level sentiment balance is calculated and the results are explored in the EDA notebook.
 
-2. **Regional enrichment**  
-   Run `PLZ API.py` to prepare postal-code and federal-state information.
-
-3. **Sampling for manual annotation**  
-   Run `Sampling_1000.py` to create the labelled sample used for model development and evaluation.
-
-4. **Sentiment modelling**  
-   Run the sentiment baseline and model scripts:
-   - `Sentiment_lexicon_Based_3_Models.py`
-   - `Cardiff_xlm_Roberta_Sentiment.py`
-   - `GBERT_Sentiment_Analysis.py`
-
-5. **Topic modelling**  
-   Run the topic classification scripts:
-   - `Base Model Topics.py`
-   - `GBERT_GridSearch_Topics.py`
-   - `GBERT_learning_curve_Topics.py`
-   - `GBERT_Topics_Inference.py`
-
-6. **Reviewer-name-based gender-indicator modelling**  
-   Run:
-   - `GBERT_Gender_Grid Search.py`
-   - `GBERT_Gender_Inference.py`
-
-7. **Restaurant-level sentiment aggregation**  
-   Run `Net Sentiment Balance.py` to calculate restaurant-level net sentiment balance.
-
-8. **Exploratory data analysis and final visualizations**  
-   Open `EDAs.ipynb` to generate and review the final descriptive analyses and figures.
+`Scrapper.py`  
+→ `PLZ API.py`  
+→ `Sampling_1000.py`  
+→ Sentiment scripts:  
+`Sentiment_lexicon_Based_3 Models.py` → `Cardiff_xlm_Roberta_Sentiment.py` → `GBERT_Sentiment_Analysis.py`  
+→ Topic scripts:  
+`Base Model Topics.py` → `GBERT_GridSearch_Topics.py` → `GBERT_learning_curve_Topics.py` → `GBERT_Topics_Inference.py`  
+→ Gender-indicator scripts:  
+`GBERT_Gender_Grid Search.py` → `GBERT_Gender_Inference.py`  
+→ `Net Sentiment Balance.py`  
+→ `EDAs.ipynb`
 
 ---
 
 ## Notes
 
-The scripts use local file paths (which had been removed) and may need to be adjusted before running on another machine.  
+The scripts originally used local file paths. These paths were removed before publishing, so users need to adjust the input and output paths before running the scripts.

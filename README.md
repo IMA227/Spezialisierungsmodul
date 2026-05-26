@@ -7,19 +7,19 @@ This project analyzes German restaurant reviews collected from Speisekarte.de us
 ## Scripts and Notebooks
 
 ### `Scrapper.py`
-Scrapes restaurant review data from Speisekarte.de
+It is dedictaed for Scrapping restaurant review data from Speisekarte.de
 
 ### `PLZ API.py`
-Retrieves German postal-code and federal-state information from OpenPLZ API and prepares the regional mapping used for spatial analysis.
+It retrieves German postal-code and federal-state information from OpenPLZ API and prepares the regional mapping used for spatial analysis.
 
 ### `Sampling_1000.py`
-Creates a stratified sample of 1,000 reviews (based on Bundesland, sentiment, and review year) for manual annotation and model evaluation.
+THis script is dedicated for the creation of a stratified sample of 1,000 reviews (based on Bundesland, sentiment, and review year) for manual annotation and model evaluation.
 
 ### `Sentiment_lexicon_Based_3 Models.py`
-Applies three classical lexicon-based sentiment approaches: TextBlobDE, SentiWS, and GermanPolarityClues.
+It applies three classical lexicon-based sentiment approaches: TextBlobDE, SentiWS, and GermanPolarityClues.
 
 ### `Cardiff_xlm_Roberta_Sentiment.py`
-Runs sentiment classification using the pretrained Cardiff XLM-RoBERTa sentiment model.
+It runs sentiment classification using the pretrained Cardiff XLM-RoBERTa sentiment model.
 
 ### `GBERT_Sentiment_Analysis.py`
 Trains and evaluates the GBERT-based sentiment classification model on the labelled sample.

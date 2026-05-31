@@ -74,8 +74,3 @@ The workflow is organized in several steps. It starts with data collection and r
 
 `Net Sentiment Balance.py` → `EDAs.ipynb`
 
----
-
-## Notes
-
-The scripts originally used personalized file paths. These paths were removed before publishing, so users need to adjust the input and output paths before running the scripts.
